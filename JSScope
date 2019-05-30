@@ -1,7 +1,17 @@
-function scope2(print){
- if(print){
- var insideIf = '12';
- }
- console.log(insideIf);
- }
- scope2(true);
+function scopeVar(print) {
+    if (print) {
+        var insideIf = '12';
+    }
+    console.log("b4 var");
+    console.log(insideIf);
+}
+scopeVar(true);
+
+function scopeLet(print) {
+    if (print) {
+        let insideIf = '12';
+    }
+    console.log("b4 let");
+    console.log(insideIf);
+}
+scopeLet(true);
