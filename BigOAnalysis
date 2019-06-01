@@ -1,0 +1,17 @@
+
+//liner execution of loop in o(n)
+function linear(n){
+    for(i=0;i<n;i++){
+        console.log(i);
+    }
+}
+
+
+function quadratic(i,j){
+    for (k=0;k<i;k++){
+        for(m=0;m<j;m++){
+            console.log(k,m);
+        }
+    }
+}
+
